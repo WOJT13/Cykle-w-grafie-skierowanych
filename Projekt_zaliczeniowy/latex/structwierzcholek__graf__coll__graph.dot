@@ -1,0 +1,7 @@
+digraph "wierzcholek_graf"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{wierzcholek_graf\n|+ wierzcholek\l+ sasiedzi\l|+ wierzcholek_graf()\l+ wierzcholek_graf()\l+ dodaj_sasiada()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Stuktura reprezentuj¹ca wierzcho³ek w grafie."];
+}

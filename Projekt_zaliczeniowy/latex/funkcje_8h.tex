@@ -1,0 +1,117 @@
+\hypertarget{funkcje_8h}{}\doxysection{funkcje.\+h File Reference}
+\label{funkcje_8h}\index{funkcje.h@{funkcje.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}stuktury.\+h\char`\"{}}\newline
+Include dependency graph for funkcje.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ int, \mbox{\hyperlink{structwierzcholek__graf}{wierzcholek\+\_\+graf}} $\ast$ $>$ \mbox{\hyperlink{funkcje_8h_aa3253bc6e0b187a977837b86d544fb53}{stworz\+\_\+mape\+\_\+grafu}} (list$<$ \mbox{\hyperlink{structKrawedz}{Krawedz}} $>$ wejscie)
+\begin{DoxyCompactList}\small\item\em Funkcja tworzy mapê wierzcho³ków. Je¿eli znajdzie nowy wierzcho³ek dodaje go do listy s¹siadów. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funkcje_8h_a0669af2487660dca7a2e37a38263369c}{znadz\+\_\+mozliwych\+\_\+sasiadow}} (\mbox{\hyperlink{structwierzcholek__graf}{wierzcholek\+\_\+graf}} $\ast$wierzcholek, map$<$ int, set$<$ int $>$$>$ \&wykluczone\+\_\+przejscia, set$<$ int $>$ \&przeanalizowane\+\_\+wierzcholki)
+\begin{DoxyCompactList}\small\item\em Funkcja szuka mo¿liwych s¹siadów dla danego wierzcho³ka wykluczaj¹c przeanalizowane wierzcho³ki oraz niedozwolone przejœcia. \end{DoxyCompactList}\item 
+list$<$ list$<$ int $>$ $>$ \mbox{\hyperlink{funkcje_8h_a99db301e13328854012f6b1370f2d2fe}{znajdz\+\_\+cykle\+\_\+dla\+\_\+wierzcholka}} (list$<$ list$<$ int $>$$>$ kolekcja\+\_\+intow, map$<$ int, \mbox{\hyperlink{structwierzcholek__graf}{wierzcholek\+\_\+graf}} $\ast$ $>$ mapa\+\_\+grafow, int index\+\_\+wierzcholka, list$<$ int $>$ \&stos, map$<$ int, set$<$ int $>$$>$ \&wylaczone\+\_\+przejscia, set$<$ int $>$ \&przeanalizowane\+\_\+wierzcholki)
+\begin{DoxyCompactList}\small\item\em Funkcja dla danego wierzcho³ka wyszukuje jego cykl. \end{DoxyCompactList}\item 
+list$<$ list$<$ int $>$ $>$ \mbox{\hyperlink{funkcje_8h_a4d525fefe3bb7ae5fe8c2c2dfff99ef5}{znadz\+\_\+cykle}} (map$<$ int, \mbox{\hyperlink{structwierzcholek__graf}{wierzcholek\+\_\+graf}} $\ast$ $>$ mapa\+\_\+grafow)
+\begin{DoxyCompactList}\small\item\em Funkcja odk³ada poszczególne cykle dla wierzcho³ków. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{funkcje_8h_aa3253bc6e0b187a977837b86d544fb53}\label{funkcje_8h_aa3253bc6e0b187a977837b86d544fb53}} 
+\index{funkcje.h@{funkcje.h}!stworz\_mape\_grafu@{stworz\_mape\_grafu}}
+\index{stworz\_mape\_grafu@{stworz\_mape\_grafu}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{stworz\_mape\_grafu()}{stworz\_mape\_grafu()}}
+{\footnotesize\ttfamily map$<$int, \mbox{\hyperlink{structwierzcholek__graf}{wierzcholek\+\_\+graf}}$\ast$$>$ stworz\+\_\+mape\+\_\+grafu (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{structKrawedz}{Krawedz}} $>$}]{wejscie }\end{DoxyParamCaption})}
+
+
+
+Funkcja tworzy mapê wierzcho³ków. Je¿eli znajdzie nowy wierzcho³ek dodaje go do listy s¹siadów. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wejscie} & Lista krawedzi podanych w pliku wejœciowym.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Mape wierzcho³ków w grafie
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8h_a4d525fefe3bb7ae5fe8c2c2dfff99ef5}\label{funkcje_8h_a4d525fefe3bb7ae5fe8c2c2dfff99ef5}} 
+\index{funkcje.h@{funkcje.h}!znadz\_cykle@{znadz\_cykle}}
+\index{znadz\_cykle@{znadz\_cykle}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{znadz\_cykle()}{znadz\_cykle()}}
+{\footnotesize\ttfamily list$<$list$<$int$>$ $>$ znadz\+\_\+cykle (\begin{DoxyParamCaption}\item[{map$<$ int, \mbox{\hyperlink{structwierzcholek__graf}{wierzcholek\+\_\+graf}} $\ast$ $>$}]{mapa\+\_\+grafow }\end{DoxyParamCaption})}
+
+
+
+Funkcja odk³ada poszczególne cykle dla wierzcho³ków. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mapa\+\_\+grafow} & Mapa wierzcho³ków.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Znalezione cykle
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8h_a0669af2487660dca7a2e37a38263369c}\label{funkcje_8h_a0669af2487660dca7a2e37a38263369c}} 
+\index{funkcje.h@{funkcje.h}!znadz\_mozliwych\_sasiadow@{znadz\_mozliwych\_sasiadow}}
+\index{znadz\_mozliwych\_sasiadow@{znadz\_mozliwych\_sasiadow}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{znadz\_mozliwych\_sasiadow()}{znadz\_mozliwych\_sasiadow()}}
+{\footnotesize\ttfamily int znadz\+\_\+mozliwych\+\_\+sasiadow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structwierzcholek__graf}{wierzcholek\+\_\+graf}} $\ast$}]{wierzcholek,  }\item[{map$<$ int, set$<$ int $>$$>$ \&}]{wykluczone\+\_\+przejscia,  }\item[{set$<$ int $>$ \&}]{przeanalizowane\+\_\+wierzcholki }\end{DoxyParamCaption})}
+
+
+
+Funkcja szuka mo¿liwych s¹siadów dla danego wierzcho³ka wykluczaj¹c przeanalizowane wierzcho³ki oraz niedozwolone przejœcia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wierzcholek} & WskaŸnik na wierzcho³ek\\
+\hline
+{\em wykluczone\+\_\+przejscia} & Kolekcja niedozwolonych przejœæ.\\
+\hline
+{\em przeanalizowane\+\_\+wierzcholki} & Kolekcja wierzcho³ków, które ju¿ zosta³y przeanalizowane.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 jeœli wierzcho³ek nie nadaje przejœcia, albo n czyli s¹siedni wierzcho³ek nadaj¹cy siê do przejœcia.
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8h_a99db301e13328854012f6b1370f2d2fe}\label{funkcje_8h_a99db301e13328854012f6b1370f2d2fe}} 
+\index{funkcje.h@{funkcje.h}!znajdz\_cykle\_dla\_wierzcholka@{znajdz\_cykle\_dla\_wierzcholka}}
+\index{znajdz\_cykle\_dla\_wierzcholka@{znajdz\_cykle\_dla\_wierzcholka}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{znajdz\_cykle\_dla\_wierzcholka()}{znajdz\_cykle\_dla\_wierzcholka()}}
+{\footnotesize\ttfamily list$<$list$<$int$>$ $>$ znajdz\+\_\+cykle\+\_\+dla\+\_\+wierzcholka (\begin{DoxyParamCaption}\item[{list$<$ list$<$ int $>$$>$}]{kolekcja\+\_\+intow,  }\item[{map$<$ int, \mbox{\hyperlink{structwierzcholek__graf}{wierzcholek\+\_\+graf}} $\ast$ $>$}]{mapa\+\_\+grafow,  }\item[{int}]{index\+\_\+wierzcholka,  }\item[{list$<$ int $>$ \&}]{stos,  }\item[{map$<$ int, set$<$ int $>$$>$ \&}]{wylaczone\+\_\+przejscia,  }\item[{set$<$ int $>$ \&}]{przeanalizowane\+\_\+wierzcholki }\end{DoxyParamCaption})}
+
+
+
+Funkcja dla danego wierzcho³ka wyszukuje jego cykl. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kolekcja\+\_\+intow} & List listy przechowuj¹cej wierzcho³ki, które nale¿¹ dd cyklu\\
+\hline
+{\em mapa\+\_\+grafow} & Mapa wierzcho³ków.\\
+\hline
+{\em index\+\_\+wierzcholka} & Wierzcholek\\
+\hline
+{\em stos} & Lista, która przetrzymuje wierzcholek\\
+\hline
+{\em wylaczone\+\_\+przejscia} & Kolekcja niedozwolonych przejœæ\\
+\hline
+{\em przeanalizowane\+\_\+wierzcholki} & Poprzednio analizowanie wierzcho³ki\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wype³niona lista listy wierzcho³ków w cyklu
+\end{DoxyReturn}

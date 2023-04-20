@@ -1,0 +1,83 @@
+\hypertarget{structKrawedz}{}\doxysection{Krawedz Struct Reference}
+\label{structKrawedz}\index{Krawedz@{Krawedz}}
+
+
+Struktura reprezentuj¹ca krawêdŸ w grafie skierowanych  
+
+
+
+
+{\ttfamily \#include $<$stuktury.\+h$>$}
+
+
+
+Collaboration diagram for Krawedz\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structKrawedz_a478dfd0727f4db0a08cf02d1166f4a4d}{zwroc\+\_\+start}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca punkt startowy krawedzi \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structKrawedz_a085fc442050c8d4223c65e318e573595}{zwroc\+\_\+koniec}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja zwraca punkt koncowy krawedzi \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structKrawedz_a003786a4a34a79db4bc057360c5c6b4f}{Krawedz}} (int start, int koniec)
+\begin{DoxyCompactList}\small\item\em Konstruktor, dziêki któremu mamy dostêp do startowego i koñcowego punktu krawedzi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struktura reprezentuj¹ca krawêdŸ w grafie skierowanych 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structKrawedz_a003786a4a34a79db4bc057360c5c6b4f}\label{structKrawedz_a003786a4a34a79db4bc057360c5c6b4f}} 
+\index{Krawedz@{Krawedz}!Krawedz@{Krawedz}}
+\index{Krawedz@{Krawedz}!Krawedz@{Krawedz}}
+\doxysubsubsection{\texorpdfstring{Krawedz()}{Krawedz()}}
+{\footnotesize\ttfamily Krawedz\+::\+Krawedz (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{koniec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor, dziêki któremu mamy dostêp do startowego i koñcowego punktu krawedzi. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Zmienna, w której bêdzie punkt startowy.\\
+\hline
+{\em koniec} & Zmienna, w której bêdzie punkt koñcowy.$<$\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structKrawedz_a085fc442050c8d4223c65e318e573595}\label{structKrawedz_a085fc442050c8d4223c65e318e573595}} 
+\index{Krawedz@{Krawedz}!zwroc\_koniec@{zwroc\_koniec}}
+\index{zwroc\_koniec@{zwroc\_koniec}!Krawedz@{Krawedz}}
+\doxysubsubsection{\texorpdfstring{zwroc\_koniec()}{zwroc\_koniec()}}
+{\footnotesize\ttfamily int Krawedz\+::zwroc\+\_\+koniec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca punkt koncowy krawedzi 
+
+\begin{DoxyReturn}{Returns}
+Koncowy punkt krawedzi
+\end{DoxyReturn}
+\mbox{\Hypertarget{structKrawedz_a478dfd0727f4db0a08cf02d1166f4a4d}\label{structKrawedz_a478dfd0727f4db0a08cf02d1166f4a4d}} 
+\index{Krawedz@{Krawedz}!zwroc\_start@{zwroc\_start}}
+\index{zwroc\_start@{zwroc\_start}!Krawedz@{Krawedz}}
+\doxysubsubsection{\texorpdfstring{zwroc\_start()}{zwroc\_start()}}
+{\footnotesize\ttfamily int Krawedz\+::zwroc\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja zwraca punkt startowy krawedzi 
+
+\begin{DoxyReturn}{Returns}
+Starowy punkt krawedzi
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+stuktury.\+h\end{DoxyCompactItemize}
