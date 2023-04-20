@@ -1,7 +1,0 @@
-digraph "czytanie_argumentow"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{czytanie_argumentow\n||+ zwroc_plik_wejsciowy()\l+ zwroc_plik_wyjsciowy()\l+ czytanie_argumentow()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Struktura która zajmuje siê czytaniem argumentów z naszego pliku."];
-}

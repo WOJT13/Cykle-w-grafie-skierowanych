@@ -1,7 +1,0 @@
-digraph "fabryka_krawedzi"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{fabryka_krawedzi\n||+ stworz()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Struktura zajmuje siê wyjêciem z pliku wejœciowego elementów ju¿ podzielonych i ze zmienionym typem zmiennyc..."];
-}
